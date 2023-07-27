@@ -88,32 +88,32 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A7EA9050-764C-44D2-B7DF-29DB1C2E6375}</ProjectGuid>
     <RootNamespace>GenPD</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -136,12 +136,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Libs\Eigen_3_3_1;D:\Libs\glew\include;D:\Libs\freeglut\include;D:\libs\glm;D:\Libs\AntTweakBar\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Libs\AntTweakBar\lib;D:\Libs\freeglut\lib\x64;D:\Libs\glew\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\Libs\Eigen_3_3_1;$(ProjectDir)..\..\Libs\glew\include;$(ProjectDir)..\..\Libs\freeglut\include;$(ProjectDir)..\..\libs\glm;$(ProjectDir)..\..\Libs\AntTweakBar\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\Libs\AntTweakBar\lib;$(ProjectDir)..\..\Libs\freeglut\lib\x64;$(ProjectDir)..\..\Libs\glew\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\Libs\Eigen_3_3_1;D:\Libs\glew\include;D:\Libs\freeglut\include;D:\libs\glm;D:\Libs\AntTweakBar\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Libs\AntTweakBar\lib;D:\Libs\freeglut\lib\x64;D:\Libs\glew\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\Libs\Eigen_3_3_1;$(ProjectDir)..\..\Libs\glew\include;$(ProjectDir)..\..\Libs\freeglut\include;$(ProjectDir)..\..\libs\glm;$(ProjectDir)..\..\Libs\AntTweakBar\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\Libs\AntTweakBar\lib;$(ProjectDir)..\..\Libs\freeglut\lib\x64;$(ProjectDir)..\..\Libs\glew\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
