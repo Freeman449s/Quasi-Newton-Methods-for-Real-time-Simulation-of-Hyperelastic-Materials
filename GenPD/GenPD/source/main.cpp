@@ -90,7 +90,7 @@ unsigned char g_button_mask = 0x00;
 bool g_mouse_down = false;
 
 //----------Frame Rate/Frame Number----------//
-mmc::FpsTracker g_fps_tracker;
+mmc::FpsTracker g_fps_tracker(1000); // 统计最近1000帧的平均帧率
 int g_max_fps = 30;
 int g_timestep = 1000 / g_max_fps;
 
@@ -935,7 +935,7 @@ void draw_overlay()
     g_simulation->GetOverlayChar(overlay_char_from_simulation, 255);
 
     char info[1024];
-	sprintf_s(info, "FPS: %3.1f | Frame#: %d%s", g_fps_tracker.fpsAverage(), g_current_frame, overlay_char_from_simulation);
+	sprintf_s(info, "FPS: %4.2f | Frame#: %d%s", g_fps_tracker.fpsAverage(), g_current_frame, overlay_char_from_simulation);
 
     for (unsigned int i = 0; i < strlen(info); i++)
     {
