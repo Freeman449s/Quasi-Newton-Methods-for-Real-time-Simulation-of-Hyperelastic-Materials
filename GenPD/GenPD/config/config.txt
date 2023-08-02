@@ -1,19 +1,19 @@
 HasEnd              0
 TotalFrame          1000
-MeshBody            0
-Wireframe           1
+MeshBody            1
+Wireframe           0
 Wireframe           1
 Texture             0
-ScreenWidth         935
-ScreenHeight        605
+ScreenWidth         2048
+ScreenHeight        1089
 
-MeshType            1
+MeshType            0
 MeshMass            10
 TetFilePath         longbar
 TetScaling          1
 TetFlip             0
 TetRotation         0
-ClothDimension      11 11
+ClothDimension      126 126
 ClothCorners        -5 8 -5 5 -1.85 -3.26
 
 HandleColor         0.3 1 0.3
@@ -40,7 +40,7 @@ DefinitenessFix     1
 LSEnable            1
 LSExact             0
 LSType              0
-LSStep              1
+LSStep              0
 LSAlpha             0.03
 LSBeta              0.5
 AnimEnableSwing     0

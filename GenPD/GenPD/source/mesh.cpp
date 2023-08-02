@@ -308,7 +308,7 @@ void ClothMesh::generateParticleList()
 	m_system_dimension = m_vertices_number * 3; 
 
 	EigenVector3 delta;
-	delta[0] = (m_corners[1][0] - m_corners[0][0]) / (ScalarType)(m_dim[0] - 1);
+	delta[0] = (m_corners[1][0] - m_corners[0][0]) / (ScalarType)(m_dim[0] - 1); // 第1维上，相邻顶点位置的变化量
 	delta[1] = (m_corners[1][1] - m_corners[0][1]) / (ScalarType)(m_dim[1] - 1);
 	delta[2] = (m_corners[1][2] - m_corners[0][2]) / (ScalarType)(m_dim[1] - 1);
 
@@ -373,7 +373,7 @@ void ClothMesh::generateParticleList()
 	m_inv_mass_matrix_1d.setFromTriplets(m_inv_triplets.begin(), m_inv_triplets.end());
 
 	// Assign color and texture uv to all the vertices.
-	glm::vec3 mesh_color(0.3, 0.8, 1);
+	glm::vec3 mesh_color(0.792, 0.478, 0.173); // 布料颜色
 	assert(m_dim[0] >=2 && m_dim[1] >= 2);
 	ScalarType inv_1 = 1.0 / (m_dim[0]-1);
 	ScalarType inv_2 = 1.0 / (m_dim[1]-1);
